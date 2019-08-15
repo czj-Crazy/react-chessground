@@ -53,7 +53,7 @@ class Demo extends React.Component {
 Reset: Reset the board to the initial starting position.
 
 ```js
-reset = () => {
+  reset = () => {
     this.chess.reset()
     this.setState({ fen: this.chess.fen() })
   }
@@ -62,11 +62,11 @@ reset = () => {
 Undo: Take back the last half-move.
 
 ```js
-undo = () => {
+  undo = () => {
     this.chess.undo()
     this.setState({ fen: this.chess.fen() })
   }
- ```
+```
  
  userPlaytime: The total amount of time a player in current game.
  
